@@ -1,0 +1,98 @@
+.page-header {
+    display: flex;
+    align-items: center;
+    background-color: #785100;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+    font-family: 'Lobster', cursive;
+}
+.souligne {
+  text-decoration: underline;
+  font-family: 'Pacifico', cursive;
+}
+
+.pp { width: 150px; 
+    height: 150px;
+    object-fit: cover;
+}
+
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #781100;
+}
+.container {
+    display: flex;
+}
+
+.joueurs-column {
+    flex: 1;
+}
+
+.equipements-column {
+    flex: 1;
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+    height: fit-content;
+    justify-content: center;
+    align-items: center; 
+}
+
+.info{
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+}
+
+.equip {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Pacifico', cursive;
+}
+.joueur {
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-family: 'Pacifico', cursive;
+}
+.logo {
+    width: 100px; 
+    height: auto; 
+    margin-left: 650px;
+    border-radius: 50%;
+}
+
+/* Page des joueur tout seuls*/
+
+.container2 {
+  display: flex;
+  justify-content: center; /* Centre les enfants horizontalement */
+  align-items: center; /* Centre les enfants verticalement */
+}
+
+.joueur2{
+    flex: 1;
+    font-family: 'Pacifico', cursive;
+}
+
+.option{
+    flex: 1;	
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+    height: fit-content;
+    margin: 10px;
+}
+.message {
+  display: inline-block; /* Pour que le conteneur s'adapte à son contenu */
+  padding: 10px; /* Ajoute un espace à l'intérieur du conteneur */
+  background-color: #f0f0f0; /* Couleur de fond grise */
+  border: 1px solid #ccc; /* Bordure grise */
+  border-radius: 5px; /* Bords arrondis */
+}
+
+
+
+
+
+
+

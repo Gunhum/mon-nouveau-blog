@@ -1,0 +1,28 @@
+{% extends 'tennisclub/base.html' %}  
+{% block content %}
+{% load static %}	
+    
+    <div class="container">
+        <div class="joueurs-column">
+	    <h3 class="souligne">Membres du club:</h3>
+            {% for j in joueurs %}
+                <article class="joueur">
+                    <h3><a href="{% url 'character_detail' id_character=j.id_character 			    %}">Joueur {{j.id_character}} : {{j.prenom}} {{j.nom}}</a></h3>
+                    <img src="{{j.photo.url}}" class="pp">
+                    <p class = "info">{{j.prenom}} est au {{j.lieu}} ({{j.etat }})</p>
+                </article>
+            {% endfor %}
+        </div>
+
+        <div class="equipements-column">
+	    <h3 class="souligne">Equipements: </h3>
+            {% for e in equipements %}
+                <article class="equip">
+                    <h4>{{e.id_equip}} : {{e.disponibilite}}  ({{e.place}} places libres) </h4>
+		<img src="{{e.photo.url}}" class="pp">
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

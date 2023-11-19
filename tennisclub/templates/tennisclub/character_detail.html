@@ -1,0 +1,26 @@
+{% extends 'tennisclub/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container2">
+    <div class="joueur2">       
+        <h2>{{ character.prenom }} {{ character.nom }}</h2>
+        <img src="{{ character.photo.url }}" class="pp">
+        <h4 class ='info'> Lieu: {{ character.lieu }} </h4>
+    </div>
+
+    <div class="option">
+        <form method="POST" class="post-form">{% csrf_token %}
+             {{ form.as_ul }}
+            <button type="submit" class="btn btn-outline-light">Deplacer</button>
+            <a href="{% url 'post_list' %}">Acceuil</a>
+        </form>
+    </div> 
+</div>
+{% if message != "" %}
+        <div class = "message">{{ message }}</div>
+    {% endif %} 
+
+ 
+ 
+{% endblock %}
