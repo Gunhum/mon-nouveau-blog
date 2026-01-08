@@ -1,5 +1,6 @@
 *.pyc
 *~
+*.exe
 /.vscode
 __pycache__
 myvenv
