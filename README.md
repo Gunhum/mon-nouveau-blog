@@ -30,25 +30,25 @@ This project was built a few years ago and may require adjustments or even not w
 
 1. Clone the repository
 
-```
+```bash
 git clone https://github.com/Gunhum/mon-nouveau-blog.git
 cd mon-nouveau-blog
 ```
 
 2. Install dependencies
-```
+```bash
 pip install -r requirements.txt
 ```
 
 3. Run the development server
-```
+```python
 python manage.py runserver
 ```
 
 4. Open in your browser
 
 Open:
-```
+```bash
 http://127.0.0.1:8000/
 ```
 
