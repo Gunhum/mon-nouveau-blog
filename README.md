@@ -26,7 +26,7 @@ This is not a production system, but a technical learning project.
 - Backend logic to process and store bookings
 
 ## ▶️ How to run locally
-This project was built a few years ago and may require adjustments or even not work at all anymore :)
+This project was built a few years ago and may require adjustments or even not work at all anymore
 
 1. Clone the repository
 
